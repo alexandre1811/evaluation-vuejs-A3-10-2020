@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <nav-bar @change-component="updateSelectedComponent"/>
+  <keep-alive>
+    <component :is="selectedComponent" v-bind="currentProps" @update-selection="updateSelection"
+    />
+  </keep-alive>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from "@/components/base/NavBar";
+import PlayerList from "@/components/player/PlayerList";
+import SelectionList from "@/components/selection/SelectionList";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    PlayerList,
+    SelectionList
+  },
+  data() {
+    return {
+      selectedComponent: 'player-list',
+      selectionArray: []
+    }
+  },
+  computed: {
+    currentProps() {
+      if(this.selectedComponent == "selection-list") {
+        return { selection: this.selectionArray }
+      }
+      return false
+    }
+  },
+  methods: {
+    updateSelectedComponent(comp) {
+      this.selectedComponent = comp
+    },
+    updateSelection(player) {
+      this.selectionArray.push(player)
+    }
   }
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

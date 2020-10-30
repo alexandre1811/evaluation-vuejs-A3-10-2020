@@ -1,0 +1,54 @@
+{
+  "name": "5 Majeurs des New York Knicks Saison 2019/2020",
+  "players": [
+    {
+      "number": "11",
+      "name": "Frank Ntilikina",
+      "country": "FRA",
+      "birthDate": "28/10/98",
+      "position": "Meneur / Arrière",
+      "health": "available",
+      "img": "https://www.parlons-basket.com/wp-content/uploads/2019/11/cut.jpg"
+    },
+    {
+      "number": "9",
+      "name": "R-J Barrett",
+      "country": "CAN",
+      "birthDate": "14/06/00",
+      "position": "Arrière / Ailier",
+      "health": "available",
+      "img": "https://www.basketsession.com/statics/uploads/2020/03/rj-barrett-knicks-760x459.jpg"
+
+    },
+    {
+      "number": "20",
+      "name": "Kevin Knox",
+      "country": "USA",
+      "birthDate": "11/08/99",
+      "position": "Ailier",
+      "health": "out",
+      "img": "https://www.basketusa.com/wp-content/uploads/2019/05/kevin-knox.jpg"
+
+    },
+    {
+      "number": "30",
+      "name": "Julius Randle",
+      "country": "USA",
+      "birthDate": "29/11/1994",
+      "position": "Ailier Fort",
+      "health": "available",
+      "img": "https://empiresportsmedia.com/wp-content/uploads/2019/12/USATSI_13809946-768x512.jpg"
+
+    },
+    {
+      "number": "23",
+      "name": "Mitchell Robinson",
+      "country": "USA",
+      "birthDate": "01/04/98",
+      "position": "Pivot",
+      "health": "available",
+      "img": "https://dailyknicks.com/wp-content/uploads/getty-images/2020/04/1182551065.jpeg"
+
+    }
+  ]
+}
